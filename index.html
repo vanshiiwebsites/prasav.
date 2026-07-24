@@ -1,0 +1,3005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="PRASAV is a premium fashion experience created by Vanshika, featuring refined clothing, timeless collections and modern luxury."
+  >
+
+  <meta name="author" content="Vanshika">
+  <meta name="theme-color" content="#111111">
+
+  <title>PRASAV | Luxury Fashion by Vanshika</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/prasav-favicon.png"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       ACCESSIBILITY
+  ====================================================== -->
+
+  <a class="skip-link" href="#mainContent">
+    Skip to main content
+  </a>
+
+
+  <!-- =====================================================
+       OPENING INTRO
+  ====================================================== -->
+
+  <div
+    class="intro-screen"
+    id="introScreen"
+    aria-hidden="true"
+  >
+    <div class="intro-screen__content">
+      <img
+        class="intro-screen__logo"
+        src="images/prasav-logo-white.png"
+        alt="PRASAV"
+      >
+
+      <p class="intro-screen__text">
+        Luxury Fashion by Vanshika
+      </p>
+
+      <div
+        class="intro-screen__progress"
+        aria-hidden="true"
+      >
+        <span class="intro-screen__progress-bar"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+       MOBILE NAVIGATION OVERLAY
+  ====================================================== -->
+
+  <div
+    class="menu-overlay"
+    id="menuOverlay"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- =====================================================
+       MOBILE NAVIGATION
+  ====================================================== -->
+
+  <aside
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-label="Mobile navigation"
+    aria-hidden="true"
+  >
+    <div class="mobile-menu__header">
+
+      <a
+        class="mobile-menu__brand"
+        href="#home"
+        aria-label="PRASAV home"
+      >
+        <img
+          src="images/prasav-logo-black.png"
+          alt="PRASAV"
+        >
+      </a>
+
+      <button
+        class="mobile-menu__close"
+        id="mobileMenuClose"
+        type="button"
+        aria-label="Close navigation menu"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+    </div>
+
+    <nav
+      class="mobile-menu__navigation"
+      aria-label="Mobile menu"
+    >
+      <a class="mobile-menu__link" href="#home">
+        Home
+      </a>
+
+      <a class="mobile-menu__link" href="#women">
+        Women
+      </a>
+
+      <a class="mobile-menu__link" href="#men">
+        Men
+      </a>
+
+      <a class="mobile-menu__link" href="#new-arrivals">
+        New Arrivals
+      </a>
+
+      <a class="mobile-menu__link" href="#collections">
+        Collections
+      </a>
+
+      <a class="mobile-menu__link" href="#editorial">
+        Editorial
+      </a>
+
+      <a class="mobile-menu__link" href="#about">
+        Our Story
+      </a>
+
+      <a class="mobile-menu__link" href="#boutique">
+        Boutique
+      </a>
+    </nav>
+
+    <div class="mobile-menu__footer">
+      <p>Created by Vanshika</p>
+
+      <a href="#newsletter">
+        Join the PRASAV world
+      </a>
+    </div>
+  </aside>
+
+
+  <!-- =====================================================
+       SITE HEADER
+  ====================================================== -->
+
+  <header
+    class="site-header"
+    id="siteHeader"
+  >
+    <div class="site-header__container">
+
+      <div class="site-header__left">
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+        >
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+
+        <nav
+          class="desktop-nav"
+          aria-label="Primary navigation"
+        >
+          <a
+            class="desktop-nav__link"
+            href="#women"
+          >
+            Women
+          </a>
+
+          <a
+            class="desktop-nav__link"
+            href="#men"
+          >
+            Men
+          </a>
+
+          <a
+            class="desktop-nav__link"
+            href="#collections"
+          >
+            Collections
+          </a>
+        </nav>
+
+      </div>
+
+
+      <a
+        class="site-header__brand"
+        href="#home"
+        aria-label="PRASAV home"
+      >
+        <img
+          class="site-header__logo site-header__logo--light"
+          src="images/prasav-logo-white.png"
+          alt="PRASAV"
+        >
+
+        <img
+          class="site-header__logo site-header__logo--dark"
+          src="images/prasav-logo-black.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+
+
+      <div class="site-header__actions">
+
+        <button
+          class="header-action"
+          id="searchOpenButton"
+          type="button"
+          aria-label="Open search"
+          aria-controls="searchPanel"
+          aria-expanded="false"
+        >
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle
+              cx="11"
+              cy="11"
+              r="6.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+            ></circle>
+
+            <path
+              d="M16 16L21 21"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </button>
+
+        <a
+          class="header-action header-action--account"
+          href="#newsletter"
+          aria-label="PRASAV private membership"
+        >
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle
+              cx="12"
+              cy="8"
+              r="3.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+            ></circle>
+
+            <path
+              d="M5 20C5.8 15.8 8.1 14 12 14C15.9 14 18.2 15.8 19 20"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       MAIN CONTENT
+  ====================================================== -->
+
+  <main id="mainContent">
+
+
+    <!-- ===================================================
+         HERO SECTION
+    ==================================================== -->
+
+    <section
+      class="hero-section"
+      id="home"
+      aria-labelledby="heroTitle"
+    >
+
+      <div class="hero-section__media">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="images/hero-women-banner.jpg"
+          >
+
+          <img
+            class="hero-section__image"
+            src="images/hero-main-banner.jpg"
+            alt="PRASAV luxury fashion collection"
+            fetchpriority="high"
+          >
+        </picture>
+
+        <div
+          class="hero-section__overlay"
+          aria-hidden="true"
+        ></div>
+      </div>
+
+
+      <div class="hero-section__content">
+
+        <p class="hero-section__eyebrow">
+          PRASAV Signature Collection
+        </p>
+
+        <h1
+          class="hero-section__title"
+          id="heroTitle"
+        >
+          Quiet Confidence.<br>
+          Timeless Form.
+        </h1>
+
+        <p class="hero-section__description">
+          Thoughtfully designed fashion shaped by refined details,
+          modern silhouettes and enduring elegance.
+        </p>
+
+        <div class="hero-section__actions">
+
+          <a
+            class="button button--light"
+            href="#women"
+          >
+            Shop Women
+          </a>
+
+          <a
+            class="button button--outline-light"
+            href="#men"
+          >
+            Shop Men
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a
+        class="hero-section__scroll"
+        href="#collections"
+        aria-label="Scroll to featured collections"
+      >
+        <span>Explore the collection</span>
+
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M12 4V20M12 20L6.5 14.5M12 20L17.5 14.5"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </a>
+
+    </section>
+        <!-- ===================================================
+         FEATURED COLLECTIONS
+    ==================================================== -->
+
+    <section
+      class="collections-section section-padding"
+      id="collections"
+      aria-labelledby="collectionsTitle"
+    >
+      <div class="container">
+
+        <div class="section-heading section-heading--center">
+
+          <p class="section-heading__eyebrow">
+            Curated for Every Expression
+          </p>
+
+          <h2
+            class="section-heading__title"
+            id="collectionsTitle"
+          >
+            Featured Collections
+          </h2>
+
+          <p class="section-heading__description">
+            Discover refined wardrobe essentials designed with
+            thoughtful details, elegant silhouettes and timeless character.
+          </p>
+
+        </div>
+
+
+        <div class="collection-grid">
+
+          <article class="collection-card collection-card--large">
+
+            <a
+              class="collection-card__link"
+              href="#women"
+              aria-label="Explore the PRASAV women collection"
+            >
+              <div class="collection-card__media">
+
+                <img
+                  class="collection-card__image"
+                  src="images/womens-collection-banner.jpg"
+                  alt="PRASAV women’s luxury fashion collection"
+                  loading="lazy"
+                >
+
+                <div
+                  class="collection-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="collection-card__content">
+
+                <p class="collection-card__eyebrow">
+                  Refined Femininity
+                </p>
+
+                <h3 class="collection-card__title">
+                  Women
+                </h3>
+
+                <span class="collection-card__action">
+                  Explore Collection
+
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 12H19M19 12L13.5 6.5M19 12L13.5 17.5"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="collection-card collection-card--large">
+
+            <a
+              class="collection-card__link"
+              href="#men"
+              aria-label="Explore the PRASAV men collection"
+            >
+              <div class="collection-card__media">
+
+                <img
+                  class="collection-card__image"
+                  src="images/mens-collection-banner.jpg"
+                  alt="PRASAV men’s luxury fashion collection"
+                  loading="lazy"
+                >
+
+                <div
+                  class="collection-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="collection-card__content">
+
+                <p class="collection-card__eyebrow">
+                  Modern Tailoring
+                </p>
+
+                <h3 class="collection-card__title">
+                  Men
+                </h3>
+
+                <span class="collection-card__action">
+                  Explore Collection
+
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 12H19M19 12L13.5 6.5M19 12L13.5 17.5"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+
+              </div>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         WOMEN COLLECTION
+    ==================================================== -->
+
+    <section
+      class="category-section category-section--women section-padding"
+      id="women"
+      aria-labelledby="womenTitle"
+    >
+      <div class="container">
+
+        <div class="section-heading section-heading--split">
+
+          <div>
+            <p class="section-heading__eyebrow">
+              The Women’s Edit
+            </p>
+
+            <h2
+              class="section-heading__title"
+              id="womenTitle"
+            >
+              Elegance in Every Form
+            </h2>
+          </div>
+
+          <p class="section-heading__description">
+            Discover graceful silhouettes, modern occasion wear and
+            everyday pieces created for confident expression.
+          </p>
+
+        </div>
+
+
+        <div class="category-feature-grid">
+
+          <article class="category-feature-card">
+
+            <a
+              class="category-feature-card__link"
+              href="#new-arrivals"
+              aria-label="Explore women’s ethnic wear"
+            >
+              <div class="category-feature-card__media">
+
+                <img
+                  class="category-feature-card__image"
+                  src="images/category-women-ethnic.jpg"
+                  alt="Women’s ethnic fashion by PRASAV"
+                  loading="lazy"
+                >
+
+                <div
+                  class="category-feature-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="category-feature-card__content">
+                <p class="category-feature-card__number">
+                  01
+                </p>
+
+                <h3 class="category-feature-card__title">
+                  Ethnic
+                </h3>
+
+                <span class="category-feature-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="category-feature-card">
+
+            <a
+              class="category-feature-card__link"
+              href="#new-arrivals"
+              aria-label="Explore women’s dresses"
+            >
+              <div class="category-feature-card__media">
+
+                <img
+                  class="category-feature-card__image"
+                  src="images/category-women-dresses.jpg"
+                  alt="Women’s dresses by PRASAV"
+                  loading="lazy"
+                >
+
+                <div
+                  class="category-feature-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="category-feature-card__content">
+                <p class="category-feature-card__number">
+                  02
+                </p>
+
+                <h3 class="category-feature-card__title">
+                  Dresses
+                </h3>
+
+                <span class="category-feature-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="category-feature-card">
+
+            <a
+              class="category-feature-card__link"
+              href="#new-arrivals"
+              aria-label="Explore women’s kurtis"
+            >
+              <div class="category-feature-card__media">
+
+                <img
+                  class="category-feature-card__image"
+                  src="images/category-women-kurtis.jpg"
+                  alt="Women’s kurtis by PRASAV"
+                  loading="lazy"
+                >
+
+                <div
+                  class="category-feature-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="category-feature-card__content">
+                <p class="category-feature-card__number">
+                  03
+                </p>
+
+                <h3 class="category-feature-card__title">
+                  Kurtis
+                </h3>
+
+                <span class="category-feature-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="category-feature-card">
+
+            <a
+              class="category-feature-card__link"
+              href="#new-arrivals"
+              aria-label="Explore women’s tops"
+            >
+              <div class="category-feature-card__media">
+
+                <img
+                  class="category-feature-card__image"
+                  src="images/category-women-tops.jpg"
+                  alt="Women’s tops by PRASAV"
+                  loading="lazy"
+                >
+
+                <div
+                  class="category-feature-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="category-feature-card__content">
+                <p class="category-feature-card__number">
+                  04
+                </p>
+
+                <h3 class="category-feature-card__title">
+                  Tops
+                </h3>
+
+                <span class="category-feature-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         WOMEN CAMPAIGN
+    ==================================================== -->
+
+    <section
+      class="campaign-section"
+      aria-labelledby="womenCampaignTitle"
+    >
+      <div class="campaign-section__media">
+
+        <img
+          class="campaign-section__image"
+          src="images/womens-festive-collection.jpg"
+          alt="PRASAV women’s festive collection"
+          loading="lazy"
+        >
+
+        <div
+          class="campaign-section__overlay"
+          aria-hidden="true"
+        ></div>
+
+      </div>
+
+
+      <div class="campaign-section__content">
+
+        <p class="campaign-section__eyebrow">
+          The Festive Edition
+        </p>
+
+        <h2
+          class="campaign-section__title"
+          id="womenCampaignTitle"
+        >
+          Crafted for Celebrations
+        </h2>
+
+        <p class="campaign-section__description">
+          Rich textures, graceful forms and statement details
+          designed for unforgettable occasions.
+        </p>
+
+        <a
+          class="button button--light"
+          href="#new-arrivals"
+        >
+          View the Edit
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         MEN COLLECTION
+    ==================================================== -->
+
+    <section
+      class="category-section category-section--men section-padding"
+      id="men"
+      aria-labelledby="menTitle"
+    >
+      <div class="container">
+
+        <div class="section-heading section-heading--split">
+
+          <div>
+            <p class="section-heading__eyebrow">
+              The Men’s Edit
+            </p>
+
+            <h2
+              class="section-heading__title"
+              id="menTitle"
+            >
+              Modern Structure. Lasting Style.
+            </h2>
+          </div>
+
+          <p class="section-heading__description">
+            Explore tailored essentials, relaxed classics and distinctive
+            occasion wear designed for the contemporary wardrobe.
+          </p>
+
+        </div>
+
+
+        <div class="category-feature-grid">
+
+          <article class="category-feature-card">
+
+            <a
+              class="category-feature-card__link"
+              href="#new-arrivals"
+              aria-label="Explore men’s shirts"
+            >
+              <div class="category-feature-card__media">
+
+                <img
+                  class="category-feature-card__image"
+                  src="images/category-men-shirts.jpg"
+                  alt="Men’s shirts by PRASAV"
+                  loading="lazy"
+                >
+
+                <div
+                  class="category-feature-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="category-feature-card__content">
+                <p class="category-feature-card__number">
+                  01
+                </p>
+
+                <h3 class="category-feature-card__title">
+                  Shirts
+                </h3>
+
+                <span class="category-feature-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="category-feature-card">
+
+            <a
+              class="category-feature-card__link"
+              href="#new-arrivals"
+              aria-label="Explore men’s jackets"
+            >
+              <div class="category-feature-card__media">
+
+                <img
+                  class="category-feature-card__image"
+                  src="images/category-men-jackets.jpg"
+                  alt="Men’s jackets by PRASAV"
+                  loading="lazy"
+                >
+
+                <div
+                  class="category-feature-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="category-feature-card__content">
+                <p class="category-feature-card__number">
+                  02
+                </p>
+
+                <h3 class="category-feature-card__title">
+                  Jackets
+                </h3>
+
+                <span class="category-feature-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="category-feature-card">
+
+            <a
+              class="category-feature-card__link"
+              href="#new-arrivals"
+              aria-label="Explore men’s ethnic wear"
+            >
+              <div class="category-feature-card__media">
+
+                <img
+                  class="category-feature-card__image"
+                  src="images/category-men-ethnic.jpg"
+                  alt="Men’s ethnic fashion by PRASAV"
+                  loading="lazy"
+                >
+
+                <div
+                  class="category-feature-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="category-feature-card__content">
+                <p class="category-feature-card__number">
+                  03
+                </p>
+
+                <h3 class="category-feature-card__title">
+                  Ethnic
+                </h3>
+
+                <span class="category-feature-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="category-feature-card">
+
+            <a
+              class="category-feature-card__link"
+              href="#new-arrivals"
+              aria-label="Explore men’s jeans"
+            >
+              <div class="category-feature-card__media">
+
+                <img
+                  class="category-feature-card__image"
+                  src="images/category-men-jeans.jpg"
+                  alt="Men’s jeans by PRASAV"
+                  loading="lazy"
+                >
+
+                <div
+                  class="category-feature-card__overlay"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+              <div class="category-feature-card__content">
+                <p class="category-feature-card__number">
+                  04
+                </p>
+
+                <h3 class="category-feature-card__title">
+                  Jeans
+                </h3>
+
+                <span class="category-feature-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         MEN CAMPAIGN
+    ==================================================== -->
+
+    <section
+      class="campaign-section campaign-section--reverse"
+      aria-labelledby="menCampaignTitle"
+    >
+      <div class="campaign-section__media">
+
+        <img
+          class="campaign-section__image"
+          src="images/mens-formal-collection.jpg"
+          alt="PRASAV men’s formal collection"
+          loading="lazy"
+        >
+
+        <div
+          class="campaign-section__overlay"
+          aria-hidden="true"
+        ></div>
+
+      </div>
+
+
+      <div class="campaign-section__content">
+
+        <p class="campaign-section__eyebrow">
+          Modern Formality
+        </p>
+
+        <h2
+          class="campaign-section__title"
+          id="menCampaignTitle"
+        >
+          Tailoring with Presence
+        </h2>
+
+        <p class="campaign-section__description">
+          Precision, restraint and refined craftsmanship
+          for a confident contemporary wardrobe.
+        </p>
+
+        <a
+          class="button button--light"
+          href="#new-arrivals"
+        >
+          Explore Formalwear
+        </a>
+
+      </div>
+      </section>
+          <!-- ===================================================
+         NEW ARRIVALS
+    ==================================================== -->
+
+    <section
+      class="new-arrivals-section section-padding"
+      id="new-arrivals"
+      aria-labelledby="newArrivalsTitle"
+    >
+      <div class="container">
+
+        <div class="section-heading section-heading--split">
+
+          <div>
+            <p class="section-heading__eyebrow">
+              The Latest Selection
+            </p>
+
+            <h2
+              class="section-heading__title"
+              id="newArrivalsTitle"
+            >
+              New Arrivals
+            </h2>
+          </div>
+
+          <p class="section-heading__description">
+            A considered selection of modern silhouettes,
+            refined textures and elevated everyday essentials.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+          <article class="product-card">
+
+            <a
+              class="product-card__link"
+              href="#newsletter"
+              aria-label="View black evening dress"
+            >
+              <div class="product-card__media">
+
+                <img
+                  class="product-card__image"
+                  src="images/women-dress-black-evening.jpg"
+                  alt="Black evening dress by PRASAV"
+                  loading="lazy"
+                >
+
+                <span class="product-card__badge">
+                  New
+                </span>
+
+              </div>
+
+              <div class="product-card__content">
+
+                <div>
+                  <p class="product-card__category">
+                    Women · Evening
+                  </p>
+
+                  <h3 class="product-card__title">
+                    Sculpted Evening Dress
+                  </h3>
+                </div>
+
+                <p class="product-card__price">
+                  ₹7,999
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <a
+              class="product-card__link"
+              href="#newsletter"
+              aria-label="View brown suede jacket"
+            >
+              <div class="product-card__media">
+
+                <img
+                  class="product-card__image"
+                  src="images/men-jacket-brown-suede.jpg"
+                  alt="Brown suede jacket by PRASAV"
+                  loading="lazy"
+                >
+
+                <span class="product-card__badge">
+                  Signature
+                </span>
+
+              </div>
+
+              <div class="product-card__content">
+
+                <div>
+                  <p class="product-card__category">
+                    Men · Outerwear
+                  </p>
+
+                  <h3 class="product-card__title">
+                    Suede Structure Jacket
+                  </h3>
+                </div>
+
+                <p class="product-card__price">
+                  ₹10,999
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <a
+              class="product-card__link"
+              href="#newsletter"
+              aria-label="View pink floral kurti"
+            >
+              <div class="product-card__media">
+
+                <img
+                  class="product-card__image"
+                  src="images/women-kurti-pink-floral.jpg"
+                  alt="Pink floral kurti by PRASAV"
+                  loading="lazy"
+                >
+
+                <span class="product-card__badge">
+                  Bestseller
+                </span>
+
+              </div>
+
+              <div class="product-card__content">
+
+                <div>
+                  <p class="product-card__category">
+                    Women · Ethnic
+                  </p>
+
+                  <h3 class="product-card__title">
+                    Floral Cotton Kurti
+                  </h3>
+                </div>
+
+                <p class="product-card__price">
+                  ₹3,499
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <a
+              class="product-card__link"
+              href="#newsletter"
+              aria-label="View white classic shirt"
+            >
+              <div class="product-card__media">
+
+                <img
+                  class="product-card__image"
+                  src="images/men-shirt-white-classic.jpg"
+                  alt="White classic shirt by PRASAV"
+                  loading="lazy"
+                >
+
+                <span class="product-card__badge">
+                  Essential
+                </span>
+
+              </div>
+
+              <div class="product-card__content">
+
+                <div>
+                  <p class="product-card__category">
+                    Men · Shirts
+                  </p>
+
+                  <h3 class="product-card__title">
+                    Classic Cotton Shirt
+                  </h3>
+                </div>
+
+                <p class="product-card__price">
+                  ₹3,999
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <a
+              class="product-card__link"
+              href="#newsletter"
+              aria-label="View maroon festive lehenga"
+            >
+              <div class="product-card__media">
+
+                <img
+                  class="product-card__image"
+                  src="images/women-lehenga-maroon-festive.jpg"
+                  alt="Maroon festive lehenga by PRASAV"
+                  loading="lazy"
+                >
+
+                <span class="product-card__badge">
+                  Festive
+                </span>
+
+              </div>
+
+              <div class="product-card__content">
+
+                <div>
+                  <p class="product-card__category">
+                    Women · Occasion
+                  </p>
+
+                  <h3 class="product-card__title">
+                    Maroon Festive Lehenga
+                  </h3>
+                </div>
+
+                <p class="product-card__price">
+                  ₹12,999
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <a
+              class="product-card__link"
+              href="#newsletter"
+              aria-label="View black festive kurta"
+            >
+              <div class="product-card__media">
+
+                <img
+                  class="product-card__image"
+                  src="images/men-kurta-black-festive.jpg"
+                  alt="Black festive kurta by PRASAV"
+                  loading="lazy"
+                >
+
+                <span class="product-card__badge">
+                  Festive
+                </span>
+
+              </div>
+
+              <div class="product-card__content">
+
+                <div>
+                  <p class="product-card__category">
+                    Men · Ethnic
+                  </p>
+
+                  <h3 class="product-card__title">
+                    Embroidered Festive Kurta
+                  </h3>
+                </div>
+
+                <p class="product-card__price">
+                  ₹6,499
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <a
+              class="product-card__link"
+              href="#newsletter"
+              aria-label="View blue wide-leg jeans"
+            >
+              <div class="product-card__media">
+
+                <img
+                  class="product-card__image"
+                  src="images/women-jeans-blue-wideleg.jpg"
+                  alt="Blue wide-leg women’s jeans by PRASAV"
+                  loading="lazy"
+                >
+
+                <span class="product-card__badge">
+                  New
+                </span>
+
+              </div>
+
+              <div class="product-card__content">
+
+                <div>
+                  <p class="product-card__category">
+                    Women · Denim
+                  </p>
+
+                  <h3 class="product-card__title">
+                    Wide-Leg Denim
+                  </h3>
+                </div>
+
+                <p class="product-card__price">
+                  ₹4,299
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <a
+              class="product-card__link"
+              href="#newsletter"
+              aria-label="View black basic T-shirt"
+            >
+              <div class="product-card__media">
+
+                <img
+                  class="product-card__image"
+                  src="images/men-tshirt-black-basic.jpg"
+                  alt="Black basic men’s T-shirt by PRASAV"
+                  loading="lazy"
+                >
+
+                <span class="product-card__badge">
+                  Essential
+                </span>
+
+              </div>
+
+              <div class="product-card__content">
+
+                <div>
+                  <p class="product-card__category">
+                    Men · Essentials
+                  </p>
+
+                  <h3 class="product-card__title">
+                    Premium Cotton T-Shirt
+                  </h3>
+                </div>
+
+                <p class="product-card__price">
+                  ₹2,499
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <div class="section-action">
+
+          <a
+            class="button button--dark"
+            href="#newsletter"
+          >
+            Join for Private Access
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         LIMITED EDITION CAMPAIGN
+    ==================================================== -->
+
+    <section
+      class="campaign-banner"
+      aria-labelledby="limitedEditionTitle"
+    >
+      <div class="campaign-banner__media">
+
+        <img
+          class="campaign-banner__image"
+          src="images/limited-edition-campaign.jpg"
+          alt="PRASAV limited edition fashion campaign"
+          loading="lazy"
+        >
+
+        <div
+          class="campaign-banner__overlay"
+          aria-hidden="true"
+        ></div>
+
+      </div>
+
+
+      <div class="campaign-banner__content">
+
+        <p class="campaign-banner__eyebrow">
+          Limited Edition
+        </p>
+
+        <h2
+          class="campaign-banner__title"
+          id="limitedEditionTitle"
+        >
+          Designed to Be Remembered
+        </h2>
+
+        <p class="campaign-banner__description">
+          Exclusive pieces defined by restrained luxury,
+          distinctive craftsmanship and timeless presence.
+        </p>
+
+        <a
+          class="button button--light"
+          href="#newsletter"
+        >
+          Request Private Access
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         EDITORIAL
+    ==================================================== -->
+
+    <section
+      class="editorial-section section-padding"
+      id="editorial"
+      aria-labelledby="editorialTitle"
+    >
+      <div class="container">
+
+        <div class="editorial-feature">
+
+          <div class="editorial-feature__media">
+
+            <img
+              class="editorial-feature__image"
+              src="images/tailoring-craftsmanship.jpg"
+              alt="PRASAV tailoring craftsmanship"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <div class="editorial-feature__content">
+
+            <p class="editorial-feature__eyebrow">
+              The PRASAV Journal
+            </p>
+
+            <h2
+              class="editorial-feature__title"
+              id="editorialTitle"
+            >
+              The Art of Considered Dressing
+            </h2>
+
+            <p class="editorial-feature__description">
+              True style begins with intention. At PRASAV, every form,
+              texture and detail is chosen to create clothing that feels
+              composed, personal and enduring.
+            </p>
+
+            <p class="editorial-feature__description">
+              Our approach brings together contemporary design,
+              thoughtful construction and a quiet visual language
+              that remains relevant beyond seasons.
+            </p>
+
+            <a
+              class="text-link"
+              href="#about"
+            >
+              Discover Our Philosophy
+
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M5 12H19M19 12L13.5 6.5M19 12L13.5 17.5"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="editorial-grid">
+
+          <article class="editorial-card">
+
+            <div class="editorial-card__media">
+
+              <img
+                class="editorial-card__image"
+                src="images/lifestyle-03-artisan-craftsmanship.jpg"
+                alt="Artisan craftsmanship at PRASAV"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="editorial-card__content">
+
+              <p class="editorial-card__category">
+                Craft
+              </p>
+
+              <h3 class="editorial-card__title">
+                The Human Detail
+              </h3>
+
+              <p class="editorial-card__description">
+                A closer look at the precision, patience and human
+                touch behind refined clothing.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="editorial-card">
+
+            <div class="editorial-card__media">
+
+              <img
+                class="editorial-card__image"
+                src="images/lifestyle-04-signature-details.jpg"
+                alt="Signature fashion details by PRASAV"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="editorial-card__content">
+
+              <p class="editorial-card__category">
+                Design
+              </p>
+
+              <h3 class="editorial-card__title">
+                Details That Define
+              </h3>
+
+              <p class="editorial-card__description">
+                Exploring how subtle proportions and thoughtful
+                finishing create lasting visual character.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="editorial-card">
+
+            <div class="editorial-card__media">
+
+              <img
+                class="editorial-card__image"
+                src="images/lifestyle-05-prasav-lifestyle.jpg"
+                alt="The PRASAV luxury lifestyle"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="editorial-card__content">
+
+              <p class="editorial-card__category">
+                Lifestyle
+              </p>
+
+              <h3 class="editorial-card__title">
+                A Life of Quiet Confidence
+              </h3>
+
+              <p class="editorial-card__description">
+                Modern luxury expressed through clarity,
+                comfort and an effortless sense of presence.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         PREMIUM ESSENTIALS
+    ==================================================== -->
+
+    <section
+      class="split-campaign section-padding"
+      aria-labelledby="essentialsTitle"
+    >
+      <div class="container">
+
+        <div class="split-campaign__layout">
+
+          <div class="split-campaign__content">
+
+            <p class="split-campaign__eyebrow">
+              Premium Essentials
+            </p>
+
+            <h2
+              class="split-campaign__title"
+              id="essentialsTitle"
+            >
+              The Foundation of a Refined Wardrobe
+            </h2>
+
+            <p class="split-campaign__description">
+              Thoughtfully created essentials designed for effortless
+              coordination, lasting comfort and understated elegance.
+            </p>
+
+            <a
+              class="button button--dark"
+              href="#new-arrivals"
+            >
+              Explore Essentials
+            </a>
+
+          </div>
+
+
+          <div class="split-campaign__media">
+
+            <img
+              class="split-campaign__image"
+              src="images/premium-essentials-campaign.jpg"
+              alt="PRASAV premium wardrobe essentials"
+              loading="lazy"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+  </section>
+      <!-- ===================================================
+         OUR STORY
+    ==================================================== -->
+
+    <section
+      class="about-section section-padding"
+      id="about"
+      aria-labelledby="aboutTitle"
+    >
+      <div class="container">
+
+        <div class="about-section__layout">
+
+          <div class="about-section__media">
+
+            <img
+              class="about-section__image"
+              src="images/about-prasav-brand.jpg"
+              alt="The story and visual identity of PRASAV"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <div class="about-section__content">
+
+            <p class="about-section__eyebrow">
+              Our Story
+            </p>
+
+            <h2
+              class="about-section__title"
+              id="aboutTitle"
+            >
+              Fashion with Purpose and Presence
+            </h2>
+
+            <p class="about-section__description">
+              PRASAV is a contemporary luxury fashion experience
+              created by Vanshika with a vision to bring together
+              refined design, thoughtful presentation and timeless style.
+            </p>
+
+            <p class="about-section__description">
+              Every collection is shaped around quiet confidence,
+              balanced proportions and clothing that feels relevant
+              beyond a single season.
+            </p>
+
+            <p class="about-section__description">
+              The identity of PRASAV reflects clarity, elegance and
+              modern Indian creativity through a carefully designed
+              digital fashion experience.
+            </p>
+
+            <div class="about-section__signature">
+
+              <span class="about-section__signature-line"></span>
+
+              <div>
+                <p>Created and designed by</p>
+                <strong>Vanshika</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         BRAND VALUES
+    ==================================================== -->
+
+    <section
+      class="values-section section-padding"
+      aria-labelledby="valuesTitle"
+    >
+      <div class="container">
+
+        <div class="section-heading section-heading--center">
+
+          <p class="section-heading__eyebrow">
+            The PRASAV Approach
+          </p>
+
+          <h2
+            class="section-heading__title"
+            id="valuesTitle"
+          >
+            Designed with Intention
+          </h2>
+
+          <p class="section-heading__description">
+            Our visual language is shaped by considered materials,
+            thoughtful construction and an enduring sense of refinement.
+          </p>
+
+        </div>
+
+
+        <div class="values-grid">
+
+          <article class="value-card">
+
+            <div class="value-card__media">
+
+              <img
+                class="value-card__image"
+                src="images/luxury-fabric-detail.jpg"
+                alt="Premium fabric detail used in PRASAV fashion"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="value-card__content">
+
+              <p class="value-card__number">
+                01
+              </p>
+
+              <h3 class="value-card__title">
+                Refined Materials
+              </h3>
+
+              <p class="value-card__description">
+                Textures and fabrics selected for comfort,
+                visual depth and lasting character.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="value-card">
+
+            <div class="value-card__media">
+
+              <img
+                class="value-card__image"
+                src="images/design-process.jpg"
+                alt="The PRASAV fashion design process"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="value-card__content">
+
+              <p class="value-card__number">
+                02
+              </p>
+
+              <h3 class="value-card__title">
+                Considered Design
+              </h3>
+
+              <p class="value-card__description">
+                Every proportion, silhouette and detail is developed
+                with clarity and purpose.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="value-card">
+
+            <div class="value-card__media">
+
+              <img
+                class="value-card__image"
+                src="images/brand-lifestyle.jpg"
+                alt="The refined lifestyle represented by PRASAV"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="value-card__content">
+
+              <p class="value-card__number">
+                03
+              </p>
+
+              <h3 class="value-card__title">
+                Timeless Presence
+              </h3>
+
+              <p class="value-card__description">
+                Fashion created to remain relevant through
+                changing seasons and evolving lifestyles.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         BRAND MANIFESTO
+    ==================================================== -->
+
+    <section
+      class="manifesto-section"
+      aria-labelledby="manifestoTitle"
+    >
+      <div class="manifesto-section__media">
+
+        <img
+          class="manifesto-section__image"
+          src="images/ui-brand-manifesto-01.jpg"
+          alt="PRASAV brand manifesto"
+          loading="lazy"
+        >
+
+        <div
+          class="manifesto-section__overlay"
+          aria-hidden="true"
+        ></div>
+
+      </div>
+
+
+      <div class="manifesto-section__content">
+
+        <p class="manifesto-section__eyebrow">
+          PRASAV Manifesto
+        </p>
+
+        <h2
+          class="manifesto-section__title"
+          id="manifestoTitle"
+        >
+          We Believe Luxury Is Not Excess.
+        </h2>
+
+        <blockquote class="manifesto-section__quote">
+          It is intention, clarity and timeless presence.
+          It is the confidence to choose less, but choose well.
+        </blockquote>
+
+        <p class="manifesto-section__closing">
+          Quiet Luxury, Reimagined.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         BOUTIQUE EXPERIENCE
+    ==================================================== -->
+
+    <section
+      class="boutique-section section-padding"
+      id="boutique"
+      aria-labelledby="boutiqueTitle"
+    >
+      <div class="container">
+
+        <div class="boutique-section__layout">
+
+          <div class="boutique-section__content">
+
+            <p class="boutique-section__eyebrow">
+              The PRASAV Boutique
+            </p>
+
+            <h2
+              class="boutique-section__title"
+              id="boutiqueTitle"
+            >
+              A Personal Expression of Luxury
+            </h2>
+
+            <p class="boutique-section__description">
+              Enter a considered fashion environment where every
+              detail is designed to make discovery feel personal,
+              effortless and memorable.
+            </p>
+
+
+            <div class="boutique-services">
+
+              <article class="boutique-service">
+
+                <p class="boutique-service__number">
+                  01
+                </p>
+
+                <div>
+                  <h3 class="boutique-service__title">
+                    Private Styling
+                  </h3>
+
+                  <p class="boutique-service__description">
+                    Personal wardrobe guidance shaped around
+                    individual style, occasion and preference.
+                  </p>
+                </div>
+
+              </article>
+
+
+              <article class="boutique-service">
+
+                <p class="boutique-service__number">
+                  02
+                </p>
+
+                <div>
+                  <h3 class="boutique-service__title">
+                    Gift Services
+                  </h3>
+
+                  <p class="boutique-service__description">
+                    Thoughtful gifting presented through refined
+                    packaging and personalised selections.
+                  </p>
+                </div>
+
+              </article>
+
+
+              <article class="boutique-service">
+
+                <p class="boutique-service__number">
+                  03
+                </p>
+
+                <div>
+                  <h3 class="boutique-service__title">
+                    Member Access
+                  </h3>
+
+                  <p class="boutique-service__description">
+                    Early access to new edits, private releases
+                    and selected PRASAV experiences.
+                  </p>
+                </div>
+
+              </article>
+
+            </div>
+
+
+            <a
+              class="button button--dark"
+              href="#newsletter"
+            >
+              Book an Appointment
+            </a>
+
+          </div>
+
+
+          <div class="boutique-section__media">
+
+            <img
+              class="boutique-section__image"
+              src="images/boutique-flagship-experience-01.jpg"
+              alt="PRASAV flagship boutique experience"
+              loading="lazy"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         BOUTIQUE GALLERY
+    ==================================================== -->
+
+    <section
+      class="boutique-gallery section-padding"
+      aria-labelledby="boutiqueGalleryTitle"
+    >
+      <div class="container">
+
+        <div class="section-heading section-heading--split">
+
+          <div>
+            <p class="section-heading__eyebrow">
+              Inside PRASAV
+            </p>
+
+            <h2
+              class="section-heading__title"
+              id="boutiqueGalleryTitle"
+            >
+              The Boutique Experience
+            </h2>
+          </div>
+
+          <p class="section-heading__description">
+            A carefully composed setting for private discovery,
+            considered service and modern luxury.
+          </p>
+
+        </div>
+
+
+        <div class="boutique-gallery__grid">
+
+          <figure class="boutique-gallery__item boutique-gallery__item--large">
+
+            <img
+              class="boutique-gallery__image"
+              src="images/boutique-interior-01.jpg"
+              alt="Interior of the PRASAV boutique"
+              loading="lazy"
+            >
+
+            <figcaption class="boutique-gallery__caption">
+              Flagship Interior
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="boutique-gallery__item">
+
+            <img
+              class="boutique-gallery__image"
+              src="images/boutique-accessories-gallery-01.jpg"
+              alt="PRASAV boutique accessories gallery"
+              loading="lazy"
+            >
+
+            <figcaption class="boutique-gallery__caption">
+              Accessories Gallery
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="boutique-gallery__item">
+
+            <img
+              class="boutique-gallery__image"
+              src="images/boutique-vip-lounge-01.jpg"
+              alt="PRASAV private client lounge"
+              loading="lazy"
+            >
+
+            <figcaption class="boutique-gallery__caption">
+              Private Client Lounge
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         CLIENT SERVICES
+    ==================================================== -->
+
+    <section
+      class="services-section section-padding"
+      aria-labelledby="servicesTitle"
+    >
+      <div class="container">
+
+        <div class="section-heading section-heading--center">
+
+          <p class="section-heading__eyebrow">
+            The PRASAV Experience
+          </p>
+
+          <h2
+            class="section-heading__title"
+            id="servicesTitle"
+          >
+            Thoughtful Services
+          </h2>
+
+          <p class="section-heading__description">
+            Refined finishing touches created to make every
+            PRASAV experience feel complete.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+          <article class="service-card">
+
+            <div class="service-card__media">
+
+              <img
+                class="service-card__image"
+                src="images/ui-packaging-01.jpg"
+                alt="PRASAV luxury packaging service"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="service-card__content">
+
+              <p class="service-card__number">
+                01
+              </p>
+
+              <h3 class="service-card__title">
+                Luxury Packaging
+              </h3>
+
+              <p class="service-card__description">
+                Every selection is presented with refined,
+                carefully considered packaging.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-card__media">
+
+              <img
+                class="service-card__image"
+                src="images/ui-gift-card-01.jpg"
+                alt="PRASAV premium gift card"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="service-card__content">
+
+              <p class="service-card__number">
+                02
+              </p>
+
+              <h3 class="service-card__title">
+                PRASAV Gift Card
+              </h3>
+
+              <p class="service-card__description">
+                A thoughtful invitation to discover personal
+                style through the PRASAV world.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-card__media">
+
+              <img
+                class="service-card__image"
+                src="images/ui-membership-01.jpg"
+                alt="PRASAV private membership experience"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="service-card__content">
+
+              <p class="service-card__number">
+                03
+              </p>
+
+              <h3 class="service-card__title">
+                Private Membership
+              </h3>
+
+              <p class="service-card__description">
+                Early access, private previews and selected
+                experiences for PRASAV members.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+  </section>
+      <!-- ===================================================
+         ACCESSORIES EDIT
+    ==================================================== -->
+
+    <section
+      class="accessories-section section-padding"
+      aria-labelledby="accessoriesTitle"
+    >
+      <div class="container">
+
+        <div class="section-heading section-heading--split">
+
+          <div>
+            <p class="section-heading__eyebrow">
+              Finishing Details
+            </p>
+
+            <h2
+              class="section-heading__title"
+              id="accessoriesTitle"
+            >
+              The Accessories Edit
+            </h2>
+          </div>
+
+          <p class="section-heading__description">
+            Distinctive accessories selected to complete
+            a refined and considered wardrobe.
+          </p>
+
+        </div>
+
+
+        <div class="accessories-grid">
+
+          <article class="accessory-card">
+
+            <a
+              class="accessory-card__link"
+              href="#newsletter"
+              aria-label="Discover PRASAV handbags"
+            >
+              <div class="accessory-card__media">
+
+                <img
+                  class="accessory-card__image"
+                  src="images/accessory-handbag-01.jpg"
+                  alt="PRASAV luxury handbag"
+                  loading="lazy"
+                >
+
+              </div>
+
+              <div class="accessory-card__content">
+                <h3 class="accessory-card__title">
+                  Handbags
+                </h3>
+
+                <span class="accessory-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="accessory-card">
+
+            <a
+              class="accessory-card__link"
+              href="#newsletter"
+              aria-label="Discover PRASAV loafers"
+            >
+              <div class="accessory-card__media">
+
+                <img
+                  class="accessory-card__image"
+                  src="images/accessory-loafers-01.jpg"
+                  alt="PRASAV luxury loafers"
+                  loading="lazy"
+                >
+
+              </div>
+
+              <div class="accessory-card__content">
+                <h3 class="accessory-card__title">
+                  Footwear
+                </h3>
+
+                <span class="accessory-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="accessory-card">
+
+            <a
+              class="accessory-card__link"
+              href="#newsletter"
+              aria-label="Discover PRASAV watches"
+            >
+              <div class="accessory-card__media">
+
+                <img
+                  class="accessory-card__image"
+                  src="images/accessory-watch-01.jpg"
+                  alt="PRASAV luxury watch"
+                  loading="lazy"
+                >
+
+              </div>
+
+              <div class="accessory-card__content">
+                <h3 class="accessory-card__title">
+                  Watches
+                </h3>
+
+                <span class="accessory-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+
+          <article class="accessory-card">
+
+            <a
+              class="accessory-card__link"
+              href="#newsletter"
+              aria-label="Discover PRASAV fragrances"
+            >
+              <div class="accessory-card__media">
+
+                <img
+                  class="accessory-card__image"
+                  src="images/accessory-fragrance-01.jpg"
+                  alt="PRASAV luxury fragrance"
+                  loading="lazy"
+                >
+
+              </div>
+
+              <div class="accessory-card__content">
+                <h3 class="accessory-card__title">
+                  Fragrance
+                </h3>
+
+                <span class="accessory-card__action">
+                  Discover
+                </span>
+              </div>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         SUMMER CAMPAIGN
+    ==================================================== -->
+
+    <section
+      class="campaign-banner campaign-banner--summer"
+      aria-labelledby="summerCampaignTitle"
+    >
+      <div class="campaign-banner__media">
+
+        <img
+          class="campaign-banner__image"
+          src="images/summer-luxury-campaign.jpg"
+          alt="PRASAV summer luxury campaign"
+          loading="lazy"
+        >
+
+        <div
+          class="campaign-banner__overlay"
+          aria-hidden="true"
+        ></div>
+
+      </div>
+
+
+      <div class="campaign-banner__content">
+
+        <p class="campaign-banner__eyebrow">
+          The Summer Perspective
+        </p>
+
+        <h2
+          class="campaign-banner__title"
+          id="summerCampaignTitle"
+        >
+          Lightness in Every Detail
+        </h2>
+
+        <p class="campaign-banner__description">
+          Relaxed silhouettes, natural textures and
+          effortless elegance for warmer days.
+        </p>
+
+        <a
+          class="button button--light"
+          href="#new-arrivals"
+        >
+          Explore the Collection
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         NEWSLETTER
+    ==================================================== -->
+
+    <section
+      class="newsletter-section section-padding"
+      id="newsletter"
+      aria-labelledby="newsletterTitle"
+    >
+      <div class="container">
+
+        <div class="newsletter-section__layout">
+
+          <div class="newsletter-section__content">
+
+            <p class="newsletter-section__eyebrow">
+              Private Access
+            </p>
+
+            <h2
+              class="newsletter-section__title"
+              id="newsletterTitle"
+            >
+              Enter the World of PRASAV
+            </h2>
+
+            <p class="newsletter-section__description">
+              Receive selected collection updates, private previews,
+              editorial stories and invitations from PRASAV.
+            </p>
+
+          </div>
+
+
+          <form
+            class="newsletter-form"
+            id="newsletterForm"
+            novalidate
+          >
+            <div class="newsletter-form__field">
+
+              <label
+                class="visually-hidden"
+                for="newsletterEmail"
+              >
+                Email address
+              </label>
+
+              <input
+                class="newsletter-form__input"
+                id="newsletterEmail"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="Email address"
+                required
+              >
+
+              <button
+                class="newsletter-form__button"
+                type="submit"
+              >
+                Subscribe
+              </button>
+
+            </div>
+
+            <p
+              class="newsletter-form__message"
+              id="newsletterMessage"
+              role="status"
+              aria-live="polite"
+            ></p>
+
+            <p class="newsletter-form__privacy">
+              By subscribing, you agree to receive communication
+              from PRASAV. You may unsubscribe at any time.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       SITE FOOTER
+  ====================================================== -->
+
+  <footer
+    class="site-footer"
+    id="contact"
+  >
+    <div class="container">
+
+      <div class="site-footer__top">
+
+        <div class="site-footer__brand-column">
+
+          <a
+            class="site-footer__brand"
+            href="#home"
+            aria-label="PRASAV home"
+          >
+            <img
+              src="images/prasav-logo-white.png"
+              alt="PRASAV"
+              loading="lazy"
+            >
+          </a>
+
+          <p class="site-footer__description">
+            A contemporary luxury fashion experience created
+            and designed by Vanshika.
+          </p>
+
+          <p class="site-footer__signature">
+            Quiet confidence. Timeless form.
+          </p>
+
+        </div>
+
+
+        <div class="site-footer__navigation">
+
+          <div class="footer-column">
+
+            <h2 class="footer-column__title">
+              Collections
+            </h2>
+
+            <nav aria-label="Footer collections navigation">
+              <a href="#women">Women</a>
+              <a href="#men">Men</a>
+              <a href="#new-arrivals">New Arrivals</a>
+              <a href="#collections">Featured Collections</a>
+            </nav>
+
+          </div>
+
+
+          <div class="footer-column">
+
+            <h2 class="footer-column__title">
+              Discover
+            </h2>
+
+            <nav aria-label="Footer discover navigation">
+              <a href="#editorial">Editorial</a>
+              <a href="#about">Our Story</a>
+              <a href="#boutique">Boutique</a>
+              <a href="#newsletter">Private Access</a>
+            </nav>
+
+          </div>
+
+
+          <div class="footer-column">
+
+            <h2 class="footer-column__title">
+              Client Services
+            </h2>
+
+            <nav aria-label="Footer services navigation">
+              <a href="#boutique">Private Styling</a>
+              <a href="#newsletter">Gift Services</a>
+              <a href="#newsletter">Membership</a>
+              <a href="#contact">Contact</a>
+            </nav>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="site-footer__bottom">
+
+        <p>
+          &copy;
+          <span id="currentYear"></span>
+          PRASAV. Created by Vanshika.
+        </p>
+
+        <p>
+          Luxury Fashion Portfolio Website
+        </p>
+
+        <a
+          class="back-to-top"
+          href="#home"
+          aria-label="Back to the top of the page"
+        >
+          Back to top
+
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M12 20V4M12 4L6.5 9.5M12 4L17.5 9.5"
+              stroke="currentColor"
+              stroke-width="1.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =====================================================
+       SEARCH PANEL
+  ====================================================== -->
+
+  <section
+    class="search-panel"
+    id="searchPanel"
+    aria-label="Search PRASAV"
+    aria-hidden="true"
+  >
+    <div
+      class="search-panel__backdrop"
+      id="searchBackdrop"
+    ></div>
+
+
+    <div
+      class="search-panel__dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="searchPanelTitle"
+    >
+      <div class="search-panel__header">
+
+        <h2
+          class="search-panel__title"
+          id="searchPanelTitle"
+        >
+          Search PRASAV
+        </h2>
+
+        <button
+          class="search-panel__close"
+          id="searchCloseButton"
+          type="button"
+          aria-label="Close search"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+      </div>
+
+
+      <form
+        class="search-form"
+        id="searchForm"
+        role="search"
+      >
+        <label
+          class="visually-hidden"
+          for="searchInput"
+        >
+          Search collections
+        </label>
+
+        <div class="search-form__field">
+
+          <input
+            class="search-form__input"
+            id="searchInput"
+            name="search"
+            type="search"
+            autocomplete="off"
+            placeholder="Search collections, products and stories"
+          >
+
+          <button
+            class="search-form__button"
+            type="submit"
+            aria-label="Submit search"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                cx="11"
+                cy="11"
+                r="6.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+
+              <path
+                d="M16 16L21 21"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </button>
+
+        </div>
+
+        <p
+          class="search-form__message"
+          id="searchMessage"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+
+
+      <div class="search-panel__suggestions">
+
+        <p class="search-panel__suggestions-title">
+          Popular Searches
+        </p>
+
+        <div class="search-panel__suggestions-list">
+
+          <button
+            class="search-suggestion"
+            type="button"
+            data-search-target="#new-arrivals"
+          >
+            New Arrivals
+          </button>
+
+          <button
+            class="search-suggestion"
+            type="button"
+            data-search-target="#women"
+          >
+            Women
+          </button>
+
+          <button
+            class="search-suggestion"
+            type="button"
+            data-search-target="#men"
+          >
+            Men
+          </button>
+
+          <button
+            class="search-suggestion"
+            type="button"
+            data-search-target="#collections"
+          >
+            Collections
+          </button>
+
+          <button
+            class="search-suggestion"
+            type="button"
+            data-search-target="#boutique"
+          >
+            Boutique
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       NO JAVASCRIPT MESSAGE
+  ====================================================== -->
+
+  <noscript>
+    <div class="noscript-message">
+      JavaScript is disabled. Some PRASAV features such as navigation,
+      search and newsletter feedback may not work correctly.
+    </div>
+  </noscript>
+
+</body>
+            </html>
